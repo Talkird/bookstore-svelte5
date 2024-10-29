@@ -17,7 +17,7 @@ export const POST: RequestHandler = async ({ request }) => {
         const newUser = new User({ uid, username, email, password, role });
         await newUser.save();
 
-        return new Response(JSON.stringify({ message: "User created successfully" }), { status: 201 });
+        return new Response(JSON.stringify({ message: "User created" }), { status: 201 });
 
     } catch (error) {
         return new Response(JSON.stringify({ error: "Failed to create user" }), { status: 500 });

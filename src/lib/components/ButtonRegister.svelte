@@ -10,7 +10,6 @@
 
     let { email, password, username }: Props = $props();
 
-
     const handleRegister = async () => {
         try {
             const userCredential = await register(email, password);
@@ -24,11 +23,11 @@
                 role: "user",
             });
 
-            console.log("✅ User registered successfully", response.data);
+            console.log("✅ Success:", response.data);
 
 
         } catch (error) {
-            console.log("❌ Error registering user", error);
+            console.log("❌ Error:", error);
         }
     }
 

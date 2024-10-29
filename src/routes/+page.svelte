@@ -3,5 +3,5 @@
 </script>
 
 <main>
-    <ButtonRegister email="losaurojuan@gmail.com" password="Pitu196812" username="Juan Losauro"/>
+    <ButtonRegister email="juan.losauro24@gmail.com" password="Pitu196812" username="Juan Losauro"/>
 </main>

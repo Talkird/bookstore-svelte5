@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "bookstore-df22c.firebaseapp.com",
   projectId: "bookstore-df22c",
   storageBucket: "bookstore-df22c.appspot.com",
